@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aradhana Elite Enterprise</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fffdf8;
+  color: #292014;
+}
+
+:root {
+  --gold: #bd8a32;
+  --lightgold: #f2dfb8;
+  --white: #fffdf8;
+  --dark: #211a10;
+}
+
+header {
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid var(--lightgold);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: var(--gold);
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #332819;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.hero {
+  min-height: 570px;
+  padding: 100px 8%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(120deg,#fffdf8,#f5e7c9);
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero h1 {
+  font-size: 55px;
+  line-height: 1.15;
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero p {
+  line-height: 1.8;
+  color: #746653;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg,#95651f,#d5aa59);
+  color: white;
+  padding: 15px 28px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+section {
+  padding: 75px 8%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heading h2 {
+  font-size: 38px;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.heading p {
+  color: #756957;
+}
+
+.about {
+  background: #faf4e9;
+  text-align: center;
+  line-height: 1.9;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px 22px;
+  border: 1px solid #ead9b6;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 30px #b7832f22;
+}
+
+.card h3 {
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #746957;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.contact {
+  background: #f8efdf;
+  text-align: center;
+}
+
+.contact h2 {
+  color: var(--gold);
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+footer span {
+  color: var(--gold);
+}
+
+@media(max-width:768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 75px 7%;
+    min-height: 450px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">AE | ARADHANA ELITE</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h4>WELCOME TO ARADHANA ELITE ENTERPRISE</h4>
+
+    <h1>
+      Ideas Into <span>Digital Experiences.</span>
+    </h1>
+
+    <p>
+      We help businesses grow with professional
+      websites, applications, branding and digital
+      marketing solutions.
+      Your vision is our commitment.
+    </p>
+
+    <a class="btn" href="#contact">
+      Start Your Project →
+    </a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="heading">
+    <h2>About Our Company</h2>
+    <p>Excellence, Innovation & Business Growth</p>
+  </div>
+
+  <p>
+    Aradhana Elite Enterprise is a digital services
+    company dedicated to helping individuals,
+    startups and businesses establish a powerful
+    digital identity.
+
+    We believe in creativity, professional services
+    and long-term business relationships.
+  </p>
+</section>
+
+<section id="services">
+  <div class="heading">
+    <h2>Our Premium Services</h2>
+    <p>Everything Your Business Needs</p>
+  </div>
+
+  <div class="services">
+
+    <div class="card">
+      <h3>Website Development</h3>
+      <p>Professional and responsive business websites.</p>
+    </div>
+
+    <div class="card">
+      <h3>App Development</h3>
+      <p>Custom mobile application solutions.</p>
+    </div>
+
+    <div class="card">
+      <h3>Google Ads</h3>
+      <p>Digital advertising and business promotion.</p>
+    </div>
+
+    <div class="card">
+      <h3>Logo & Branding</h3>
+      <p>Premium logo design and brand identity.</p>
+    </div>
+
+    <div class="card">
+      <h3>Poster Designing</h3>
+      <p>Creative promotional posters and graphics.</p>
+    </div>
+
+    <div class="card">
+      <h3>Lead Generation</h3>
+      <p>Business enquiry and customer acquisition support.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Let's Build Something Great</h2>
+
+  <p>
+    Have a business idea or project?
+    Contact Aradhana Elite Enterprise today.
+    <br>
+    Beawar, Rajasthan, India
+    <br>
+    +91 8306200511
+  </p>
+
+  <a class="btn"
+     href="https://wa.me/918306200511?text=Hello%20Aradhana%20Elite%20Enterprise">
+     Contact Us on WhatsApp
+  </a>
+</section>
+
+<footer>
+  <h3>ARADHANA ELITE ENTERPRISE</h3>
+  <p>Your Digital Growth Partner</p>
+  <br>
+  <p>© 2026 <span>Aradhana Elite Enterprise</span></p>
+  <p>All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
